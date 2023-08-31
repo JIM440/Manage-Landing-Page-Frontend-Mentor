@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.brightRed{
+    color: hsl(12, 88%, 59%);
+}
+
+.brightRedBg{
+    background-color: hsl(12, 88%, 59%);
+}
+.brightRedLight{
+    color: hsl(12, 88%, 69%);
+}
+.brightRedLightBg{
+    background-color: hsl(12, 88%, 69%);
+}
+.brightRed{
+    color: hsl(12, 88%, 59%);
+}
+.brightRedBg{
+    background-color: hsl(12, 88%, 59%);
+}
+.brightRedSupLigth{
+    color: hsl(12, 88%, 95%);
+}
+.brightRedSupLigthBg{
+    background-color: hsl(12, 88%, 95%);
+}
+.darkBlue{
+    color: hsl(228, 39%, 23%);
+}
+.darkBlueBg{
+    background-color: hsl(228, 39%, 23%);
+}
+.darkGrayishBlue{
+    color: hsl(227, 12%, 61%);
+}
+.darkGrayishBlueBg{
+    background-color: hsl(227, 12%, 61%);
+}
+.veryDarkBlue{
+    color: hsl(233, 12%, 13%);
+}
+.veryDarkBlueBg{
+    background-color: hsl(233, 12%, 13%);
+}
+.veryPaleRed{
+    color: hsl(13, 100%, 96%);
+}
+.veryPaleRedBg{
+    background-color: hsl(13, 100%, 96%);
+}
+.veryLightGray{
+    color: hsl(0, 0%, 98%);
+}
+.veryLightGrayBg{
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* nav */
+nav a:hover{
+    color: hsl(227, 12%, 61%);
+}
+footer a:hover{
+    color: hsl(12, 88%, 59%);
+}
+.btn{
+    max-width: 150px;
+}
+
+.btn:hover{
+    background-color: hsl(12, 88%, 95%);  
+}
+
+.num{
+    padding: 10px 15px;
+}
+
+/* bg image */
+body{
+    background-image: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position: 90% -25%;
+    background-size: 800px;
+}
+
+@media (max-width: 576px){
+    body{
+        background-position: 50px -50px;
+        background-size: 500px;   
+    }
+}
+
+
+/* hamburger icon */
+.hamburger{
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s ease;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+.hamburger-middle{
+    transform: translateY(7px);
+}
+.hamburger-bottom{
+    transform: translateY(14px);
+}
+
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-middle{
+    display: none;
+}
+
+ .open .hamburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}

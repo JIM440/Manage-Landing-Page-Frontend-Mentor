@@ -6,4 +6,5 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 
 - Semantic HTML5 markup
 - CSS 
-- TailwindCss
+- TailwindCSS
+- Javascript
